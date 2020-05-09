@@ -11,7 +11,7 @@ There are two types of joins in hadoop.
 
 Here we use Map join since we have multiple input files.
 
-## So how we join in hadoop with map join?
+## How do we join data in hadoop by using map join?
 
 * Write Mapper for each input file
   * Key is the attribute we want to join.
@@ -42,4 +42,10 @@ In this specific movielens dataset case output format is
 movieId movieTitle \tuserId,rating,ts \tuserId,rating,ts \tuserId,rating,ts ....
 ````
 
+>Spaces do not exist except the one in between movieId and movieTitle, others just for illustration.
+
 Here each movie has multiple ratings data so we use \t to distungish.
+
+## References
+
+[Joining Two Files Using Multiple Input [May 2020]](http://unmeshasreeveni.blogspot.com/2014/12/joining-two-files-using-multipleinput.html)

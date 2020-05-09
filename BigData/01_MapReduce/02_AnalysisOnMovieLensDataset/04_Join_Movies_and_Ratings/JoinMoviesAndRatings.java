@@ -72,9 +72,7 @@ public class JoinMoviesAndRatings extends Configured implements Tool {
             dataCombiner.append(",");
             dataCombiner.append(ratingsData[3]);    // Append timestamp, we may need it, no harm to add :P
 
-            // Add table number to the first index
-            // so that we can differentiate the data at the reducer
-            currData.set("2" + dataCombiner.toString());
+            currData.set(dataCombiner.toString());
 
             context.write(currMovieId, currData);
         }

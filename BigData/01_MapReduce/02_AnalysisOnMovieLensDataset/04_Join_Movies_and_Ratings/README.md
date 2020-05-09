@@ -27,19 +27,16 @@ Here we use Map join since we have multiple input files.
 
 output contains format of
 ````
-key table1 \ttable2 \ttable2 \table2.....
+key table1 table2 table2 table2.....
 ````
 
 * Here 
   * Key and table1 has always one-to-one relation.
   * Key and table2 has always one-to-may relation.
 
-That is why we use \t in front of them.
-
 In this specific movielens dataset case output format is
 
 ````
-movieId movieTitle \tuserId,rating,ts \tuserId,rating,ts \tuserId,rating,ts ....
+movieId movieTitle userId,rating,ts,userId,rating,ts,userId,rating,ts ....
 ````
 
-Here each movie has multiple ratings data so we use \t to distungish.

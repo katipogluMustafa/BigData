@@ -65,7 +65,6 @@ public class JoinMoviesAndRatings extends Configured implements Tool {
 
             // Collect all other attributes in the currData
             StringBuilder dataCombiner = new StringBuilder();
-            dataCombiner.append("\t");               // To differentiate between different rating data
             dataCombiner.append(ratingsData[0]);    // Append userId, we'll need userId
             dataCombiner.append(",");
             dataCombiner.append(ratingsData[2]);    // Append rating, we'll surely need rating
@@ -119,6 +118,9 @@ public class JoinMoviesAndRatings extends Configured implements Tool {
 
         // Lets configure the join job
         Configuration configuration = new Configuration();
+
+        // Set the output delimiter as comma instead of default \t
+        configuration.set("mapred.textoutputformat.separator", ",");
 
         Job job = Job.getInstance(configuration);
         job.setJarByClass(JoinMoviesAndRatings.class);

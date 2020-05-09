@@ -27,7 +27,7 @@ Here we use Map join since we have multiple input files.
 
 output contains format of
 ````
-key table1 table2 table2 table2.....
+key,table1,table2,table2,table2.....
 ````
 
 * Here 
@@ -37,6 +37,6 @@ key table1 table2 table2 table2.....
 In this specific movielens dataset case output format is
 
 ````
-movieId movieTitle userId,rating,ts,userId,rating,ts,userId,rating,ts ....
+movieId,movieTitle userId,rating,ts,userId,rating,ts,userId,rating,ts ....
 ````
 

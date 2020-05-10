@@ -11,5 +11,8 @@ In step2, we calculate average rating of each user.
 
 ## Step 3
 
-In step3, we calculate the pearson correlatino in between every user.
+In step3, we calculate the pearson correlation in between every user by using the following formula.
 
+![](image.png)
+
+![](abbreviations.png)

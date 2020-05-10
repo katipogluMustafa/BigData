@@ -1,5 +1,9 @@
 <h1 align="center" >Pearson Correlation Step 3: </br>Pearson Correlation Coefficient Calculation</h1>
 
+## NOTE!
+
+I assume that you have followed the [Map Reduce 1-4 Notes](https://github.com/katipogluMustafa/BigData/tree/master/01_MapReduce).
+
 ## Defining Our Own Writable Data Types
 
 When calculating pearson correlation, for each user and her/his each neighbour, we have rating data like `user1,rating neighbour1,rating` where ratings belong to the the same movie.

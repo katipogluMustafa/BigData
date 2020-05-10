@@ -65,7 +65,9 @@ public class MovieRatings extends Configured implements Tool {
 
         Job job = Job.getInstance(configuration);
         job.setJarByClass(MovieRatings.class);
-
+        
+        // Here the output is given as SequenceFileOutputFormat 
+        // so that Text,MapWritable outputs can be directly read by another map-reduce task
         job.setOutputFormatClass(SequenceFileOutputFormat.class);
 
         job.setMapperClass(MovieRatingsMapper.class);

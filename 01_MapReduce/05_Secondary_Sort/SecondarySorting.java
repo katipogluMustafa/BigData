@@ -24,7 +24,7 @@ public class SecondarySorting {
      * UserPairPearsonCorr is used for holding our key and value.
      * By using compareTo method we give the sort order, all other methods are part of my design, not a necessity
      */
-    public static class UserPairPearsonCorr extends WritableComparator implements Writable, WritableComparable<UserPairPearsonCorr> {
+    public static class UserPairPearsonCorr implements WritableComparable<UserPairPearsonCorr> {
 
         private int userId1;                     // Natural Key For Sorting in KNN
         private int userId2;

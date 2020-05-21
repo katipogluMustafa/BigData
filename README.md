@@ -1,6 +1,6 @@
 # Big Data
 
-Currently map reduce notes and projects can be found in this repository.
+Currently only map reduce notes and projects can be found in this repository.
 
 Topics:
 
